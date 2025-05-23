@@ -1,0 +1,8 @@
+version: "3.12"
+
+services:
+  payout_script:
+    build: .
+    working_dir: /src
+    command: >
+      python main.py test_files/data1.csv test_files/data2.csv test_files/data3.csv --report payout
